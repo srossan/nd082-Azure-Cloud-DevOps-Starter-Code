@@ -17,8 +17,8 @@
 		"image_offer": "UbuntuServer",
 		"image_sku": "18.04-LTS",
 
-		"managed_image_resource_group_name": "udacity-proj-rg",
-		"managed_image_name": "ubuntuImage",
+		"managed_image_resource_group_name": "udacity-templates-rg",
+		"managed_image_name": "UbuntuImage-1804",
 
 		"azure_tags": {
         		"dept": "DevOps",
