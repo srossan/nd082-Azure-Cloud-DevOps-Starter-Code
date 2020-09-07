@@ -17,7 +17,8 @@ For this project, you will write a Packer template and a Terraform template to d
 4. Install [Terraform](https://www.terraform.io/downloads.html)
 
 ### Instructions
-**Your words here**
+Create a packer image, to be used later in the terraform manifest
+For various variables, please be sure to defined them as environment ones.
 
 ### Output
 **Your words here**
