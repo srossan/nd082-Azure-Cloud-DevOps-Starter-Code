@@ -1,13 +1,26 @@
 {
-      "if": {
-        "allOf": [
-          {
-            "field": "tags",
-            "exists": false
-          }
-        ]
-      },
-      "then": {
-        "effect": "deny"
-      }
+    "properties": {
+        "displayName": "Require tag and its value",
+        "policyType": "Custom",
+        "mode": "Indexed",
+        "description": "Enforces a required tag and its value.",
+        "parameters": {
+            "tagName": {
+                "type": "String",
+                "metadata": {
+                    "description": "Name of the tag"
+                }
+            }
+        },
+        "policyRule": {
+            "if": {
+                "not": {
+                    "field": "[concat('tags[', parameters('tagName'), ']')]",
+                }
+            },
+            "then": {
+                "effect": "deny"
+            }
+        }
+    }
 }

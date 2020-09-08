@@ -21,8 +21,8 @@
 		"managed_image_name": "UbuntuImage-1804",
 
 		"azure_tags": {
-        		"dept": "DevOps",
-        		"task": "Template"
+        		"environment": "Artifacts",
+        		"template": "Ubuntu1804"
 		},
 
 		"location": "East US",
